@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vh;
+    background: url('bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ddd;
+}
+
+header{
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header img{
+    height: 70px;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li{
+    color: #fff;
+    font-size: 18px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px;
+}
+
+.container .content{
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .content h1{
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.container .content .tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.container .content .tags .tag{
+    font-size: 13px;
+    margin: 0 15px;
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.container .content .nav{
+    width: 100%;
+}
+
+.container .content .nav ul{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: .5px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+}
+
+.container .content .nav ul li{
+    color: #ddd;
+    font-size: 18px;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.container .content .nav ul li:first-child::before{
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: calc(100% + 20px);
+    bottom: -10px;
+    left: -10px;
+    background: #fff;
+}
+
+.container .content p{
+    color: #9e9a9a;
+    line-height: 1.5;
+    max-width: 80%;
+    margin-top: 30px;
+}
+
+.container .content .rating{
+    width: 80%;
+    margin: 20px 0;
+}
+
+.container .content .rating i{
+    color: #FFD700;
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.container .content .rating i.big{
+    color: #fff;
+    font-size: 30px;
+    margin-left: 30px;
+}
+
+.container .content .btn-box{
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.container .content .btn-box a{
+    color: #ddd;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    margin-right: 15px;
+}
+
+.container .content .btn-box i{
+    margin-right: 7px;
+}
+
+.more{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 30px;
+    right: 30px;
+}
+
+.more .prev img,
+.more .next img{
+    height: 30px;
+    width: 30px;
+    border: none;
+}
+
+.more img{
+    width: 200px;
+    height: 115px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin: 0 10px;
+}
